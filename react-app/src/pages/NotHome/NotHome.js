@@ -21,13 +21,16 @@ const NotHome = () => {
   }, [counter]);  // Re-run the effect whenever counter changes
 
   return (
-    <div>
-      <h1>Not Home Page</h1>
-      <p>Counter: {counter}</p>
-      {counter > 5 && <p>You passed 5!</p>}  {/* Display message if counter > 5 */}
-
-      <button onClick={increaseCounter}>Increase</button>  {/* Button to increase counter */}
-      <button onClick={decreaseCounter}>Decrease</button>  {/* Button to decrease counter */}
+    <div className="center-content">
+      <div>
+        <h1>Not Home Page</h1>
+        <p>Counter: {counter}</p>
+        {counter > 5 && <p>You passed 5!</p>}  {/* Display message if counter > 5 */}
+        <div>
+          <button onClick={increaseCounter}>Increase</button>
+          <button onClick={decreaseCounter}>Decrease</button>
+        </div>
+      </div>
     </div>
   );
 };

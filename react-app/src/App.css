@@ -1,0 +1,25 @@
+body {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .center-content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .center-content button {
+    margin: 10px;
+  }
+  
